@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1674px;
+}
+
+.header {
+
+}
+
+.header .top-menu {
+    background: #000;
+    padding: 6px 0 6px 0;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header .container-fluid.top-menu .row,
+.header .container .row {
+    margin: 0;
+}
+
+.top-contacts-wrap,
+.top-menu-list-wrap {
+    padding: 0;
+}
+
+.top-contacts-wrap {
+
+}
+
+.top-menu-list-wrap > div {
+    justify-content: flex-end;
+}
+
+.top-menu-list.top-contacts {
+    height: 100%;
+}
+
+.top-menu-list {
+    align-items: center;
+}
+
+.top-menu-list li {
+    margin-right: 19px;
+}
+
+.top-menu-list.top-contacts li:first-child {
+    margin-right: 27px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+.top-menu {
+
+}
+
+.top-menu-list li a,
+.top-menu .menu-link,
+.personal-area a,
+.navbar-btn a {
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+.top-menu .menu-phone,
+.navigation .catalog a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.top-menu-list .top-btns-item a {
+    background: #333333;
+    padding: 5px 20px;
+    border-radius: 7px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+
+.top-menu-list .top-btns-item {
+    margin-right: 8px;
+}
+
+.top-menu-list.top-menu li {
+    margin-right: 12px;
+    white-space: nowrap;
+}
+
+.top-menu-list.top-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar {
+    padding: 10px 0;
+    color: #333333;
+}
+
+.navbar-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-btns .navbar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-btn-img {
+    min-height: 27px;
+}
+
+.navbar-btns .navbar-btn:not(:last-child) {
+    margin-right: 19px;
+}
+
+.personal-area {
+    display: flex;
+    align-items: center;
+    background: #F2F3F5;
+    border-radius: 20px;
+    padding-right: 25px;
+    margin-right: 25px;
+}
+
+.personal-area img {
+    padding: 5px 8px;
+}
+
+.personal-area a,
+.navbar-btn a {
+    display: inline-block;
+    color: #333333;
+    text-decoration: none;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background: #E0E0E0;
+    border-radius: 9px;
+    background: #E0E0E0; 
+/*    border-right: 2px solid #E0E0E0;*/
+}
+
+.search-form .form-control {
+    height: 38px;
+    z-index: 1;
+    border-radius: 9px;
+    padding-left: 30px;
+    border-right: 3px solid #E0E0E0;
+    border-left: 3px solid #E0E0E0;
+    min-width: 100%;
+}
+
+.form-control::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #828282;
+}
+
+.btn-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E0E0E0;
+    padding: 12px 30px 12px 34px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    cursor: pointer;]
+    z-index: -2;
+    margin-left: -6px;
+}
+
+
+
+
+
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .catalog {
+    background: #000000;
+    padding: 10px 35px;
+    border-radius: 10px;
+    margin-right: 14px;
+}
+
+.navigation .catalog a {
+    text-decoration: none;
+}
+
+.category ul li {
+    margin-right: 26px;
+}
+
+.category .brands-and-sales li:last-child {
+    margin-right: 0;
+}
+
+.category ul li a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.brands-and-sales {
+    justify-content: flex-end;
+}
+
+@media only screen and (min-width: 1280px) {
+    .header .container {
+        padding: 0;
+    }
+}
