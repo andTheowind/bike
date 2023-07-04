@@ -251,8 +251,174 @@ ul li a {
     color: #000000;
 }
 
+.navigation .search {
+    width: 60%;
+}
+
 .brands-and-sales {
     justify-content: flex-end;
+}
+
+.silver-tickets h1 {
+    margin-top: 26px;
+    margin-bottom: 45px;
+}
+
+.silver-tickets .container > .row > div {
+    margin-bottom: 15px;
+}
+
+.silver-bg h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.silver-bg {
+    background: linear-gradient(90deg, #E2E6EB 19.77%, #F3F1F5 62.29%);
+    border-radius: 20px;
+    padding: 30px 26px 26px 26px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.silver-bg.bonus-wrap {
+    background: linear-gradient(90deg, #FF8C00 0%, #FFBD00 77.38%);
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+.silver-bg.return-wrap,
+.silver-bg.delivery-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.silver-bg.return-wrap .silver-block-img,
+.silver-bg.delivery-wrap .silver-block-img {
+    position: static;
+}
+
+.silver-bg.bonus-wrap ul {
+    padding-left: 20px;
+}
+
+.silver-bg.bonus-wrap ul li {
+    list-style: disc;
+    margin-bottom: 3px;
+}
+
+.silver-bg.guarantees-wrap a {
+    color: #;
+}
+
+.silver-bg p {
+    padding-bottom: 15px;
+    line-height: 1.85;
+    color: #333333;
+    font-size: 14px;
+}
+
+.silver-bg.happy-to-help-wrap p,
+.silver-bg.delivery-wrap p {
+    color: #000000;
+}
+
+.happy-to-help-wrap {
+
+}
+
+.happy-to-help {
+    padding-bottom: 20px;
+}
+
+.payment-wrap {
+
+}
+
+.payment {
+
+}
+
+.payment ul li {
+    margin-block: 20px;
+}
+
+.payment ul li a {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.silver-bg .silver-block-img {
+    position: absolute;
+    top: -30px;
+}
+
+.happy-to-help-wrap .silver-block-img img {
+    max-width: 215px;
+}
+
+.payment-wrap .silver-block-img img {
+    max-width: 188px;
+}
+
+.payment-wrap .silver-block-img {
+    right: 0;
+}
+
+.happy-to-help-wrap .silver-block-img {
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 5%);
+}
+
+.silver-bg.bonus-wrap .silver-block-img {
+    top: -22px;
+    right: 30px;
+}
+
+.bonus-wrap .silver-block-img {
+    
+}
+
+.bonus-txt ul li {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.guarantees-wrap .silver-block-img {
+
+}
+
+.guarantees-txt-with-btn p a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.guarantees {
+
+}
+
+.guarantees-txt-with-btn {
+    display: flex;  
+    justify-content: space-between;
+}
+
+.ticket-btn-wrap {
+    padding-top: 20px;
+}
+
+.silver-block-btn {
+    background: #0C1111;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 @media only screen and (min-width: 1280px) {
