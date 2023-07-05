@@ -1,138 +1,220 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bike</title>
+
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" />
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+	<style>
+
+		.menu-products {
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		.menu-products-wrap {
+			flex-grow: 0;
+		}
+	</style>
 
 	<header class="header">
 		<div class="container-fluid top-menu">
-			<div class="row">
-				<div class="col-12">
-					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-5 top-contacts-wrap">
-								<ul class="top-menu-list top-contacts">
-									<li class="top-contacts-item">
-										<a href="#" class="menu-adress">Архангельск-на-под</a>
-									</li>
-									<li class="top-contacts-item">
-										<a href="#" class="menu-adress">ул. Дорожная, 1Е и еще 3</a>
-									</li>
-									<li class="top-contacts-item">
-										<a href="#" class="menu-phone">8 800 500-03-20</a>
-									</li>
-									<li class="top-contacts-item">
-										<a href="#" class="menu-phone">8 861 200-03-20</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-12 col-lg-7 top-menu-list-wrap">
-								<div class="d-flex">
-									<ul class="top-menu-list top-btns">
-										<li class="top-btns-item">
-											<a href="#" class="top-btn">Ремонт и обслуживание</a>
-										</li>
-										<li class="top-btns-item">
-											<a href="#" class="top-btn">Прокат оборудования</a>
-										</li>
-									</ul>
-									<ul class="top-menu-list top-menu">
-										<li class="top-menu-item">
-											<a href="#" class="menu-link">О нас</a>
-										</li>
-										<li class="top-menu-item">
-											<a href="#" class="menu-link">Доставка</a>
-										</li>
-										<li class="top-menu-item">
-											<a href="#" class="menu-link">Оплата</a>
-										</li>
-										<li class="top-menu-item">
-											<a href="#" class="menu-link">Вакансии</a>
-										</li>
-										<li class="top-menu-item">
-											<a href="#" class="menu-link">Помощь</a>
-										</li>
-										<li class="top-menu-item">
-											<a href="#" class="menu-link">Контакты</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-4 col-lg-5 top-contacts-wrap">
+						<ul class="top-menu-list top-contacts">
+							<li class="top-contacts-item">
+								<a href="#" class="menu-adress">Архангельск-на-под</a>
+							</li>
+							<li class="top-contacts-item">
+								<a href="#" class="menu-adress">ул. Дорожная, 1Е и еще 3</a>
+							</li>
+							<!-- <li class="top-contacts-item">
+								<a href="#" class="menu-phone">8 800 500-03-20</a>
+							</li>
+							<li class="top-contacts-item">
+								<a href="#" class="menu-phone">8 861 200-03-20</a>
+							</li> -->
+						</ul>
+						<ul class="top-menu-list top-contacts">
+							<li class="top-contacts-item">
+								<a href="#" class="menu-phone">8 800 500-03-20</a>
+							</li>
+							<li class="top-contacts-item">
+								<a href="#" class="menu-phone">8 861 200-03-20</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-8 col-lg-7 top-menu-list-wrap">
+						<div class="d-flex">
+							<ul class="top-menu-list top-btns">
+								<li class="top-btns-item">
+									<a href="#" class="top-btn">Ремонт и обслуживание</a>
+								</li>
+								<li class="top-btns-item">
+									<a href="#" class="top-btn">Прокат оборудования</a>
+								</li>
+							</ul>
+							<ul class="top-menu-list top-menu">
+								<li class="top-menu-item">
+									<a href="#" class="menu-link">О нас</a>
+								</li>
+								<li class="top-menu-item">
+									<a href="#" class="menu-link">Доставка</a>
+								</li>
+								<li class="top-menu-item">
+									<a href="#" class="menu-link">Оплата</a>
+								</li>
+								<li class="top-menu-item">
+									<a href="#" class="menu-link">Вакансии</a>
+								</li>
+								<li class="top-menu-item">
+									<a href="#" class="menu-link">Помощь</a>
+								</li>
+								<li class="top-menu-item">
+									<a href="#" class="menu-link">Контакты</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
+
 		<div class="container">
-			<div class="row">
 
-				<nav class="navbar">
+			<nav class="navbar row">
+				<div class="col-4 col-xl-4 pr-0 pr-xl-2">
 
-					<div class="col-2">
-						<div class="nav-logo-wrap">
-							<a href="#">
-								<img src="img/logo.png" class="img-fluid nav-logo">
+					<div class="d-flex justify-content-between">
+						<a href="#">
+							<picture>
+								<source srcset="img/logo-mob.svg" media="(max-width: 576px)">
+								<img src="img/logo.png" class="nav-logo">
+							</picture>
+						</a>
+						<button class="catalog-btn burger btn-reset">
+							<svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect y="7" width="16" height="2" rx="1" fill="white" />
+								<rect width="16" height="2" rx="1" fill="white" />
+							</svg>
+							<span>Каталог</span>
+							<span class="burger-mob"></span>
+							<span class="burger-mob"></span>
+						</button>
+					</div>
+
+				</div>
+				<div class="col-4 col-xl-4 pl-0 pl-xl-2">
+					<div class="search-form-wrap">
+
+						<!-- <div class="catalog-btn"> -->
+
+						<!-- </div> -->
+
+						<form class="form-inline search-form">
+							<input class="form-control" type="search" placeholder="Поиск на сайте" aria-label="Search">
+							<button class="btn-search btn-reset">
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M7.99996 14.9999C11.8659 14.9999 14.9999 11.8659 14.9999 7.99996C14.9999 4.13399 11.8659 1 7.99996 1C4.13399 1 1 4.13399 1 7.99996C1 11.8659 4.13399 14.9999 7.99996 14.9999Z"
+										stroke="#333333" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M12.9492 12.95L16.9992 17" stroke="#333333" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</form>
+
+					</div>
+				</div>
+				<div class="col-4 col-xl-4">
+					<div class="navbar-btns">
+						<div class="personal-area">
+							<img src="img/personal-area.svg">
+							<a href="#">Вход</a>
+						</div>
+						<div class="navbar-btn">
+							<a href="#" class="navbar-btn-link">
+								<svg width="18" height="18" viewBox="0 0 18 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.2057 7.63211L5.06934 2.97925" stroke="#0C1111" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path
+										d="M17.2727 13.5492V6.3772C17.2724 6.06277 17.1887 5.75395 17.03 5.48173C16.8713 5.20951 16.6433 4.98345 16.3687 4.82624L10.0404 1.24022C9.76553 1.08285 9.45374 1 9.13635 1C8.81897 1 8.50718 1.08285 8.23232 1.24022L1.90404 4.82624C1.62945 4.98345 1.40138 5.20951 1.2427 5.48173C1.08402 5.75395 1.00033 6.06277 1 6.3772V13.5492C1.00033 13.8637 1.08402 14.1725 1.2427 14.4447C1.40138 14.7169 1.62945 14.943 1.90404 15.1002L8.23232 18.6862C8.50718 18.8436 8.81897 18.9264 9.13635 18.9264C9.45374 18.9264 9.76553 18.8436 10.0404 18.6862L16.3687 15.1002C16.6433 14.943 16.8713 14.7169 17.03 14.4447C17.1887 14.1725 17.2724 13.8637 17.2727 13.5492Z"
+										stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M1.24414 5.44495L9.1364 9.9723L17.0287 5.44495" stroke="#0C1111"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M9.13574 18.9999V9.96313" stroke="#0C1111" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								Заказы
+							</a>
+						</div>
+						<div class="navbar-btn">
+							<a href="#" class="navbar-btn-link">
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M17 17L1 17" stroke="#0C1111" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M3 17L3 5L6 5" stroke="#0C1111" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M7 1L7 17L12 17L12 1L7 1Z" stroke="#0C1111" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M12 8L16 8L16 17" stroke="#0C1111" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								Сравнение
+							</a>
+						</div>
+						<div class="navbar-btn">
+							<a href="#" class="navbar-btn-link">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.0703 16.7848L18.5119 9.34322C20.3404 7.51475 20.6102 4.50664 18.8798 2.58506C18.4464 2.10234 17.9192 1.713 17.3303 1.44077C16.7414 1.16855 16.1033 1.01917 15.4548 1.00173C14.8062 0.984287 14.161 1.09916 13.5583 1.33934C12.9557 1.57952 12.4083 1.93997 11.9495 2.39869L10.5508 3.79738L9.34322 2.58975C7.51476 0.761279 4.50664 0.491516 2.58506 2.22187C2.10234 2.6553 1.713 3.18253 1.44077 3.7714C1.16855 4.36027 1.01917 4.99843 1.00173 5.64694C0.984287 6.29545 1.09916 6.94072 1.33934 7.54337C1.57952 8.14602 1.93997 8.69341 2.39869 9.15216L10.0313 16.7848C10.1691 16.9226 10.356 17 10.5508 17C10.7457 17 10.9326 16.9226 11.0703 16.7848V16.7848Z"
+										stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								Избранное
+							</a>
+						</div>
+						<div class="navbar-btn">
+							<a href="#" class="navbar-btn-link">
+								<svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M8.00474 18.9999C8.55748 18.9999 9.00557 18.5555 9.00557 18.0074C9.00557 17.4592 8.55748 17.0149 8.00474 17.0149C7.45199 17.0149 7.00391 17.4592 7.00391 18.0074C7.00391 18.5555 7.45199 18.9999 8.00474 18.9999Z"
+										stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+									<path
+										d="M17.0145 19C17.5672 19 18.0153 18.5556 18.0153 18.0075C18.0153 17.4594 17.5672 17.015 17.0145 17.015C16.4618 17.015 16.0137 17.4594 16.0137 18.0075C16.0137 18.5556 16.4618 19 17.0145 19Z"
+										stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+									<path
+										d="M1 1H4.45741L6.77388 12.4772C6.85292 12.8719 7.06941 13.2264 7.38545 13.4787C7.70149 13.7309 8.09695 13.865 8.50259 13.8573H16.9041C17.3097 13.865 17.7052 13.7309 18.0212 13.4787C18.3373 13.2264 18.5538 12.8719 18.6328 12.4772L20.0158 5.28575H5.32177"
+										stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								Корзина
 							</a>
 						</div>
 					</div>
-					<div class="col-6">
-						<div class="navigation">
+				</div>
+			</nav>
 
-							<div class="catalog">
-								<a href="#">Каталог</a>
-							</div>
-							<div class="search">
-								<form class="form-inline search-form">
-									<input class="form-control" type="search" placeholder="Поиск на сайте" aria-label="Search">
-									<button class="btn-search" type="submit">
-										<img src="img/search-img.svg" class="img-fluid search-img">
-									</button>
-								</form>
-							</div>
-
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="navbar-btns">
-							<div class="personal-area">
-								<img src="img/personal-area.svg">
-								<a href="#">Вход</a>
-							</div>
-							<div class="navbar-btn">
-								<div class="navbar-btn-img">
-									<img src="img/orders.svg">
-								</div>
-								<a href="#">Заказы</a>
-							</div>
-							<div class="navbar-btn">
-								<div class="navbar-btn-img">
-									<img src="img/compare.svg">
-								</div>
-								<a href="#">Сравнение</a>
-							</div>
-							<div class="navbar-btn">
-								<div class="navbar-btn-img">
-									<img src="img/favorites.svg">
-								</div>
-								<a href="#">Избранное</a>
-							</div>
-							<div class="navbar-btn">
-								<div class="navbar-btn-img">
-									<img src="img/cart.svg">
-								</div>
-								<a href="#">Корзина</a>
-							</div>
-						</div>
-					</div>
-
-				</nav>
-
-			</div>
 			<div class="row">
 				<div class="col-auto category">
 					<ul class="subcategory-list">
@@ -155,6 +237,1110 @@
 					</ul>
 				</div>
 			</div>
+
+		</div>
+
+		<div class="catalog-wrap container">
+			<nav class="nav-catalog row">
+
+				<ul class="catalog-list col-12 col-md-4">
+					<li class="catalog-item" onclick="openTab(event, 'firstTab')" id="defaultOpen">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-1.png" alt="">
+							</div>
+							Велосипеды
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'secondTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-2.png" alt="">
+							</div>
+							Электросамокаты
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'thirdTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-3.png" alt="">
+							</div>
+							Самокаты
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'FifthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-4.png" alt="">
+							</div>
+							Скейтборды
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'SixthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-5.png" alt="">
+							</div>
+							Роликовые коньки
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'SeventhTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-6.png" alt="">
+							</div>
+							Велоаксессуары
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'EighthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-7.png" alt="">
+							</div>
+							SUP и каяки
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'NinthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-8.png" alt="">
+							</div>
+							Туризм
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'TenthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-9.png" alt="">
+							</div>
+							Тренажеры
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'EleventhTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-10.png" alt="">
+							</div>
+							Запчасти для самоктов
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'TwelfthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-11.png" alt="">
+							</div>
+							Запчасти для электросамоктов
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'ThirteenthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-12.png" alt="">
+							</div>
+							Горные лыжи
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'FourteenthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-13.png" alt="">
+							</div>
+							Сноуборды
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'FifteenthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-14.png" alt="">
+							</div>
+							Рюкзаки и сумки
+						</a>
+					</li>
+					<li class="catalog-item" onclick="openTab(event, 'SixteenthTab')">
+						<a href="#" class="catalog-link">
+							<div class="catalog-img-wrap">
+								<img src="img/catalog-img-15.png" alt="">
+							</div>
+							Другое
+						</a>
+					</li>
+				</ul>
+
+				<div class="menu-products tabcontent col-8 d-none d-md-flex" id="firstTab">
+
+					
+					<div class="menu-products-wrap col-4">
+						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
+						<ul class="products-list">
+							<li class="product-item">
+								<a href="#">Амортизаторы</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Вилки</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="menu-products-wrap col-4">
+						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
+						<ul class="products-list">
+							<li class="product-item">
+								<a href="#">Амортизаторы</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Вилки</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="menu-products-wrap col-4">
+						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
+						<ul class="products-list">
+							<li class="product-item">
+								<a href="#">Амортизаторы</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Вилки</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="menu-products-wrap col-4">
+						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
+						<ul class="products-list">
+							<li class="product-item">
+								<a href="#">Амортизаторы</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Вилки</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="menu-products-wrap col-4">
+						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
+						<ul class="products-list">
+							<li class="product-item">
+								<a href="#">Амортизаторы</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Вилки</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="menu-products-wrap col-4">
+						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
+						<ul class="products-list">
+							<li class="product-item">
+								<a href="#">Амортизаторы</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Вилки</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="menu-products-wrap col-4">
+						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
+						<ul class="products-list">
+							<li class="product-item">
+								<a href="#">Амортизаторы</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Вилки</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="menu-products-wrap col-4">
+						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
+						<ul class="products-list">
+							<li class="product-item">
+								<a href="#">Амортизаторы</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Вилки</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+							</li>
+							<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+							</li>
+						</ul>
+					</div>
+
+					
+
+					<!-- <p class="menu-products-title">Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+								<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p class="menu-products-title">Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+								<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+
+					<p class="menu-products-title">Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+								<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+
+					<p class="menu-products-title">Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+								<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+								<a href="#">Переключтели передние</a>
+						</li>
+					</ul> -->
+				</div>
+
+				<div class="menu-products tabcontent" id="secondTab">
+					<p>Амортизаторы и вилки2222222222</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="thirdTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="FourthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="FifthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="SixthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="SeventhTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="EighthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="NinthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="TenthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="EleventhTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="TwelfthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="ThirteenthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="FourteenthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="FifteenthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="menu-products tabcontent" id="SixteenthTab">
+					<p>Амортизаторы и вилки33333333</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Колёса и комплектующие</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Амортизаторы</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Вилки</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для вилок</a>
+						</li>
+						<li class="product-item">
+							<a href="#">Запчасти для амортизаторов</a>
+						</li>
+
+					</ul>
+
+					<p>Трансмиссия</p>
+					<ul class="products-list">
+
+						<li class="product-item">
+							<a href="#">Манетки</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключатели задние</a>
+						</li>
+
+						<li class="product-item">
+							<a href="#">Переключтели передние</a>
+						</li>
+
+					</ul>
+				</div>
+
+
+			</nav>
 		</div>
 	</header>
 
@@ -167,7 +1353,9 @@
 					<div class="col-12 col-lg-4 col-xl-3">
 						<div class="silver-bg happy-to-help-wrap">
 							<div class="silver-block-img">
-								<img src="img/help-img.png" class="img-fluid" alt="">
+								<picture>
+									<img src="img/help-img.png" srcset="img/new-pic-x2.png 2x">
+								</picture>
 							</div>
 							<div class="happy-to-help">
 								<h2>Мы всегда рады помочь</h2>
@@ -178,7 +1366,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-4 col-xl-3 px-0">
+					<div class="col-12 col-lg-4 col-xl-3 px-lg-0">
 						<div class="silver-bg payment-wrap">
 							<div class="payment">
 								<h2>Оплата</h2>
@@ -201,15 +1389,15 @@
 								</ul>
 							</div>
 							<div class="silver-block-img">
-								<img src="img/money.png" class="img-fluid" alt="">
+								<img src="img/money.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-xl-6">
-						<div class="d-flex flex-column">	
+						<div class="d-flex flex-column">
 
 							<div class="silver-bg bonus-wrap">
-								<div class="bonus-txt">	
+								<div class="bonus-txt">
 									<h2>Бонусная система</h2>
 									<ul>
 										<li>Покупай.</li>
@@ -218,41 +1406,42 @@
 									</ul>
 								</div>
 								<div class="silver-block-img">
-									<img src="img/bonus-money-img.png" class="img-fluid" alt="">
+									<img src="img/bonus-money-img.png" alt="">
 								</div>
 							</div>
 
 							<div class="silver-bg guarantees-wrap">
-								<div class="guarantees">	
+								<div class="guarantees">
 									<h2>Гарантия</h2>
 									<div class="guarantees-txt-with-btn">
 										<p>
-											Информацию по всем вопросам гарантии 
-											<br>	
-											<a href="#">можно узнать тут.</a> 
+											Информацию по всем вопросам гарантии
+											<br>
+											<a href="#">можно узнать тут.</a>
 										</p>
 										<div class="ticket-btn-wrap">
 											<a href="#" class="silver-block-btn">Гарантийные талоны</a>
-										</div>	
+										</div>
 									</div>
-									
+
 								</div>
 							</div>
 
 						</div>
 					</div>
 
-					<div class="col-12 col-lg-6 pr-0">
+					<div class="col-12 col-lg-6 pr-lg-0">
 						<div class="silver-bg return-wrap">
 							<div class="return">
 								<h2>Легкий возврат</h2>
-								<p>Вернуть товары легко и удобно, если сохранён его товарный вид и потребительские свойства.</p>
+								<p>Вернуть товары легко и удобно, если сохранён его товарный вид и потребительские
+									свойства.</p>
 								<div class="ticket-btn-wrap">
 									<a href="#" class="silver-block-btn">Узнать подробнее</a>
 								</div>
 							</div>
 							<div class="silver-block-img">
-								<img src="img/return-img.png" class="img-fluid" alt="">
+								<img src="img/return-img.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -266,7 +1455,7 @@
 								</div>
 							</div>
 							<div class="silver-block-img">
-								<img src="img/delivery-img.png" class="img-fluid" alt="">
+								<img src="img/delivery-img.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -275,11 +1464,221 @@
 			</div>
 		</section>
 
+		<section class="text-help-page">
+			<div class="container how-make-order">
+				<h2>Как сделать заказ</h2>
+				<div class="row">
+					<div class="col-12">
+						<p>Мы делаем все возможное, чтобы максимально облегчить вам оформление заказа. Для того, чтобы
+							сделать это:</p>
+						<ul>
+							<li>Перейдите в раздел «Каталог»;</li>
+							<li>под понравившимся вам товаром нажать на зеленую кнопку «Купить»: это отправляет ваш
+								заказ в виртуальную корзину;</li>
+							<li>переходите в корзину и оформляете заказ;</li>
+							<li>система автоматически зарегистрирует вас;</li>
+							<li>ожидайте смс и email уведомления о статусе вашего заказа. При возникновении вопросов
+								будем рады помочь по телефону 8(800)500-03-20.</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="container easy-return">
+				<h2>Легкий возврат</h2>
+				<div class="row">
+					<div class="col-12">
+						<p>
+							Покупайте, пробуйте, вам понравится, если нет, мы вернем вам деньги! Без вопросов, заявлений
+							и дополнительных комиссий. <br>
+							Вы вправе передумать. Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на
+							понравившийся вам товар или вернём деньги.
+						</p>
+						<ul>
+							<li>Свяжитесь с нами по телефону или онлайн-чаты. Мы оформим вам бланк возврата и вышлем его
+								вам на электронную почту; </li>
+							<li>распечатайте и заполните бланк, его нужно будет сдать вместе с заказом на указанном нами
+								пункте выдачи ;</li>
+							<li>надёжно упакуйте товар в коробку, предотвращая трение изделий между собой и свободное
+								перемещение товара внутри упаковки;</li>
+							<li>сдайте заказ в том же месте, где получали его или другом удобном вам партнёрском пункте
+								выдачи заказов или магазине;</li>
+						</ul>
+						<p>Возврат и обмен товара производится на основании Закона РФ "О защите прав потребителей" и
+							регулируется ст. 18, 19, 20, 21.</p>
+						<p>В случае доставки на дом и возникновения гарантийного случая/наличия брака у товара, мы
+							самостоятельно и за свой счёт заберём от вас данный товар.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="container feedback">
+				<h2>Обратная связь</h2>
+				<div class="row">
+					<div class="col-12">
+						<p>Если у вас есть предложения или замечания по работе интернет-магазина «Байк Центр», то вы
+							всегда можете обратиться к нам:</p>
+						<ul>
+							<li>в социальной сети ВКонтакте;</li>
+							<li>по электронной почте руководителю интернет-магазина info@bike-centre.ru;</li>
+							<li>написав отзыв о работе «Байк Центра».</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h4>Не нашли то что нужно?</h4>
+						<p>Позвоните нам по номеру 8 (800) 000000000</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</main>
 
 	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-6">
+					<div class="row">
+						<div class="col-6">
+							<h3 class="ftr-subtitle">Помощь</h3>
+							<ul class="ftr-list">
+								<li><a href="#">Как оплатить?</a></li>
+								<li><a href="#">Как получить?</a></li>
+								<li><a href="#">Пользовательское соглашение</a></li>
+								<li><a href="#">Бонусная программа</a></li>
+							</ul>
+						</div>
+						<div class="col-6">
+							<h3 class="ftr-subtitle">О нас</h3>
+							<ul class="ftr-list">
+								<li><a href="#">Ремонт и облуживание</a></li>
+								<li><a href="#">Прокат оборудования</a></li>
+								<li><a href="#">Наша история</a></li>
+								<li><a href="#">Мероприятия от Байк Центра</a></li>
+								<li><a href="#">Арендодателям</a></li>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-11">
+							<h4>Узнавай о скидках первым</h4>
+							<form class="form-inline subscribe-form">
+								<input class="form-control" type="search" placeholder="Ведите свой e-mail"
+									aria-label="Search">
+								<button class="subscribe-btn" type="submit">
+									Подписаться
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-xl-6">
+					<div class="row">
+						<div class="col-6">
+							<h3 class="ftr-subtitle">Контакты</h3>
+							<ul class="ftr-list ftr-phones">
+								<li><a href="#">8 (800) 500-03-20</a></li>
+								<li><a href="#">8 (861) 202-58-40</a></li>
+							</ul>
+							<ul class="ftr-list ftr-messengers">
+								<li>
+									<a href="#" class="ftr-messenger">
+										<div><img src="img/whatsapp.png"></div>
+										WhatsApp
+									</a>
+								</li>
+								<li>
+									<a href="#" class="ftr-messenger">
+										<div><img src="img/telegram.png"></div>
+										Telegram
+									</a>
+								</li>
+							</ul>
+							<h3 class="ftr-subtitle">Адреса в г. Крансодаре:</h3>
+							<ul class="ftr-list">
+								<li>ул. Дорожная, 1Е (Яблоновский)</li>
+								<li>ул. Сормовская, 2а</li>
+								<li>ул. Красных Партизан, 237</li>
+								<li>ул. Российская, 131/5</li>
+							</ul>
+						</div>
+						<div class="col-6 qr-with-icons">
+							<div class="row">
+
+								<div class="col-12 qr-with-stores">
+									<h4 class="ftr-subtitle">Скачайте наше приложение</h4>
+									<div class="d-flex">
+										<div class="gr-code-wrap">
+											<img src="img/qr_bike-center.png">
+										</div>
+										<div class="stores-wrap">
+											<div class="app-store">
+												<img src="img/app-store.png">
+											</div>
+											<div class="google-play">
+												<img src="img/google-play.png">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 soc-icons-wrap">
+									<div class="soc-icons">
+										<div class="vk-icon">
+											<i class="fab fa-vk"></i>
+										</div>
+										<div class="youtube-icon">
+											<i class="fab fa-youtube"></i>
+										</div>
+										<div class="tik-tok-icon">
+											<i class="fab fa-tiktok fa-2x"></i>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</footer>
 
+	<script>
+		const burger = document.querySelector('.burger');
+		const popUp = document.querySelector('.catalog-wrap');
+
+		burger.addEventListener('click', () => {
+			if (popUp.style.display == 'none') {
+				popUp.style.display = 'block';
+			} else {
+				popUp.style.display = 'none';
+			}
+		})
+	</script>
+
+	<script>
+		function openTab(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("catalog-item");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		document.getElementById("defaultOpen").click();
+	</script>
+
 </body>
+
 </html>
