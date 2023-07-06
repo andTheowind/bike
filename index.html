@@ -16,20 +16,6 @@
 </head>
 
 <body>
-	<style>
-
-		.menu-products {
-/*			flex-direction: column;*/
-			flex-wrap: wrap;
-			/*align-items: flex-start;
-			justify-content: flex-start;*/
-		}
-		.menu-products-wrap {
-			flex-grow: 0;
-		}
-
-
-	</style>
 
 	<header class="header">
 		<div class="container-fluid top-menu">
@@ -44,12 +30,6 @@
 							<li class="top-contacts-item">
 								<a href="#" class="menu-adress">ул. Дорожная, 1Е и еще 3</a>
 							</li>
-							<!-- <li class="top-contacts-item">
-								<a href="#" class="menu-phone">8 800 500-03-20</a>
-							</li>
-							<li class="top-contacts-item">
-								<a href="#" class="menu-phone">8 861 200-03-20</a>
-							</li> -->
 						</ul>
 						<ul class="top-menu-list top-contacts">
 							<li class="top-contacts-item">
@@ -100,12 +80,12 @@
 		<div class="container">
 
 			<nav class="navbar row">
-				<div class="col-4 col-xl-4 pr-0 pr-xl-2">
+				<div class="col-5 col-md-4 col-xl-4 pr-0 pr-xl-2 logo-with-catalog">
 
-					<div class="d-flex justify-content-between">
+					<div class="d-flex">
 						<a href="#">
 							<picture>
-								<source srcset="img/logo-mob.svg" media="(max-width: 576px)">
+								<source srcset="img/logo-mob.svg" media="(max-width: 768px)">
 								<img src="img/logo.png" class="nav-logo">
 							</picture>
 						</a>
@@ -116,18 +96,17 @@
 								<rect width="16" height="2" rx="1" fill="white" />
 							</svg>
 							<span>Каталог</span>
-							<span class="burger-mob"></span>
-							<span class="burger-mob"></span>
+							<div class="burger-mob-wrap" id="burgerMob">
+								<span class="burger-mob"></span>
+								<span class="burger-mob"></span>
+								<span class="burger-mob"></span>
+							</div>
 						</button>
 					</div>
 
 				</div>
-				<div class="col-4 col-xl-4 pl-0 pl-xl-2">
+				<div class="offset-3 col-2 col-sm-1 offset-sm-5 offset-md-0 col-md-4 col-md-4 col-xl-4 pl-0 pl-xl-2">
 					<div class="search-form-wrap">
-
-						<!-- <div class="catalog-btn"> -->
-
-						<!-- </div> -->
 
 						<form class="form-inline search-form">
 							<input class="form-control" type="search" placeholder="Поиск на сайте" aria-label="Search">
@@ -146,7 +125,7 @@
 
 					</div>
 				</div>
-				<div class="col-4 col-xl-4">
+				<div class="col-2 col-sm-1 col-md-4 col-xl-4">
 					<div class="navbar-btns">
 						<div class="personal-area">
 							<img src="img/personal-area.svg">
@@ -217,7 +196,7 @@
 				</div>
 			</nav>
 
-			<div class="row">
+			<div class="row category-row">
 				<div class="col-auto category">
 					<ul class="subcategory-list">
 						<li class="subcategory-list-item">
@@ -245,7 +224,7 @@
 		<div class="catalog-wrap container">
 			<nav class="nav-catalog row">
 
-				<ul class="catalog-list col-12 col-md-4">
+				<ul class="catalog-list col-12 col-md-3">
 					<li class="catalog-item" onclick="openTab(event, 'firstTab')" id="defaultOpen">
 						<a href="#" class="catalog-link">
 							<div class="catalog-img-wrap">
@@ -368,979 +347,705 @@
 					</li>
 				</ul>
 
-				<div class="menu-products tabcontent col-8" id="firstTab">
+				<div class="menu-products tabcontent col-9" id="firstTab">
+
+					<div class="col-4">
+					
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Амортизаторы и вилки</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Амортизаторы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Вилки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для вилок</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для амортизаторов</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Колёса и комплектующие</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Покрышки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Камеры</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Обода</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Колеса в сборе</a>
+								</li>
+
+								<li class="product-item">
+									<a href="#">Втулки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для втулок</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Герметики</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Наппеля</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Спицы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Флипперы</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Трансмиссия</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Манетки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Переключатели задние</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Переключтели передние</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col-4">
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Привод</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Кассеты и трещотки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Звёзды и рокринги</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Системы (шатуны)</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Педали</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Каретки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Цепи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Натяжители и успокоители</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Рамы и комплектующие</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Рамы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Петухи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Защита пера</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Пеги</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Рулевое управление</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Рули</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Рога</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Грипсы и обмотки руля</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Выносы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Рулевые колонки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Якоря и проставочные кольца</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col-4">
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Седля и подседельные штыри</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Сёдла</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Штири</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Подседельные зажимы</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Тормозные системы</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Тормоза дисковые гидравлические</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза дисковые механические</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Роторы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Адаптеры</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Колодки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза V-Brake</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза клещевые</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза кантиливерные</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормозные ручки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для тормозных систем</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Инструменты</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Мультитулы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Ключи специальные</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Съемники</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Выжимники цепи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Ремнаборы для камер и покрышек</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Наборы инструментов</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Монтажки</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
 
 					
-					<div class="menu-products-wrap col-4">
-						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
-						<ul class="products-list">
-							<li class="product-item">
-								<a href="#">Амортизаторы</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Вилки</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-							</li>
-						</ul>
-					</div>
+				</div>
 
-					<div class="menu-products-wrap col-4">
-						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
-						<ul class="products-list">
-							<li class="product-item">
-								<a href="#">Амортизаторы</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Вилки</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="menu-products-wrap col-4">
-						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
-						<ul class="products-list">
-							<li class="product-item">
-								<a href="#">Амортизаторы</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Вилки</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="menu-products-wrap col-4">
-						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
-						<ul class="products-list">
-							<li class="product-item">
-								<a href="#">Амортизаторы</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Вилки</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="menu-products-wrap col-4">
-						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
-						<ul class="products-list">
-							<li class="product-item">
-								<a href="#">Амортизаторы</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Вилки</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="menu-products-wrap col-4">
-						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
-						<ul class="products-list">
-							<li class="product-item">
-								<a href="#">Амортизаторы</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Вилки</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="menu-products-wrap col-4">
-						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
-						<ul class="products-list">
-							<li class="product-item">
-								<a href="#">Амортизаторы</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Вилки</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="menu-products-wrap col-4">
-						<p class="menu-products-title">Амортизаторы и вилки11111111</p>
-						<ul class="products-list">
-							<li class="product-item">
-								<a href="#">Амортизаторы</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Вилки</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-							</li>
-							<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-							</li>
-						</ul>
-					</div>
-
+				<div class="menu-products tabcontent col-9" id="secondTab">
 					
+					<div class="col-4">
+					
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Амортизаторы и вилки2</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Амортизаторы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Вилки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для вилок</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для амортизаторов</a>
+								</li>
+							</ul>
+						</div>
 
-					<!-- <p class="menu-products-title">Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-								<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Колёса и комплектующие</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Покрышки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Камеры</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Обода</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Колеса в сборе</a>
+								</li>
 
-					<p class="menu-products-title">Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-								<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
+								<li class="product-item">
+									<a href="#">Втулки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для втулок</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Герметики</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Наппеля</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Спицы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Флипперы</a>
+								</li>
+							</ul>
+						</div>
 
-					<p class="menu-products-title">Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-								<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Трансмиссия</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Манетки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Переключатели задние</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Переключтели передние</a>
+								</li>
+							</ul>
+						</div>
 
-					<p class="menu-products-title">Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-								<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-								<a href="#">Переключтели передние</a>
-						</li>
-					</ul> -->
+					</div>
+
+					<div class="col-4">
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Привод</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Кассеты и трещотки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Звёзды и рокринги</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Системы (шатуны)</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Педали</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Каретки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Цепи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Натяжители и успокоители</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Рамы и комплектующие</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Рамы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Петухи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Защита пера</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Пеги</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Рулевое управление</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Рули</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Рога</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Грипсы и обмотки руля</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Выносы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Рулевые колонки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Якоря и проставочные кольца</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col-4">
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Седля и подседельные штыри</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Сёдла</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Штири</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Подседельные зажимы</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Тормозные системы</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Тормоза дисковые гидравлические</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза дисковые механические</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Роторы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Адаптеры</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Колодки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза V-Brake</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза клещевые</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза кантиливерные</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормозные ручки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для тормозных систем</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Инструменты</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Мультитулы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Ключи специальные</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Съемники</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Выжимники цепи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Ремнаборы для камер и покрышек</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Наборы инструментов</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Монтажки</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
 				</div>
 
-				<div class="menu-products tabcontent col-8" id="secondTab">
-					<p>Амортизаторы и вилки2222222222</p>
-					<ul class="products-list">
+				<div class="menu-products tabcontent col-9" id="thirdTab">
+					
+					<div class="col-4">
+					
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Амортизаторы и вилки3</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Амортизаторы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Вилки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для вилок</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для амортизаторов</a>
+								</li>
+							</ul>
+						</div>
 
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Колёса и комплектующие</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Покрышки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Камеры</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Обода</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Колеса в сборе</a>
+								</li>
 
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
+								<li class="product-item">
+									<a href="#">Втулки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для втулок</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Герметики</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Наппеля</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Спицы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Флипперы</a>
+								</li>
+							</ul>
+						</div>
 
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Трансмиссия</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Манетки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Переключатели задние</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Переключтели передние</a>
+								</li>
+							</ul>
+						</div>
 
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
+					</div>
 
-					</ul>
+					<div class="col-4">
 
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Привод</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Кассеты и трещотки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Звёзды и рокринги</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Системы (шатуны)</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Педали</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Каретки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Цепи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Натяжители и успокоители</a>
+								</li>
+							</ul>
+						</div>
 
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Рамы и комплектующие</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Рамы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Петухи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Защита пера</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Пеги</a>
+								</li>
+							</ul>
+						</div>
 
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Рулевое управление</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Рули</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Рога</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Грипсы и обмотки руля</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Выносы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Рулевые колонки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Якоря и проставочные кольца</a>
+								</li>
+							</ul>
+						</div>
 
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
+					</div>
 
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
+					<div class="col-4">
 
-					</ul>
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Седля и подседельные штыри</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Сёдла</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Штири</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Подседельные зажимы</a>
+								</li>
+							</ul>
+						</div>
 
-					<p>Трансмиссия</p>
-					<ul class="products-list">
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Тормозные системы</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Тормоза дисковые гидравлические</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза дисковые механические</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Роторы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Адаптеры</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Колодки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза V-Brake</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза клещевые</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормоза кантиливерные</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Тормозные ручки</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Запчасти для тормозных систем</a>
+								</li>
+							</ul>
+						</div>
 
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
+						<div class="menu-products-wrap">
+							<p class="menu-products-title">Инструменты</p>
+							<ul class="products-list">
+								<li class="product-item">
+									<a href="#">Мультитулы</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Ключи специальные</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Съемники</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Выжимники цепи</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Ремнаборы для камер и покрышек</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Наборы инструментов</a>
+								</li>
+								<li class="product-item">
+									<a href="#">Монтажки</a>
+								</li>
+							</ul>
+						</div>
 
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
+					</div>
 
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-
-					</ul>
 				</div>
-
-				<div class="menu-products tabcontent col-8" id="thirdTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="fourthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="fifthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="sixthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="seventhTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="eighthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="ninthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="tenthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="eleventhTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="twelfthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="thirteenthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="fourteenthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="fifteenthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-
-					</ul>
-				</div>
-
-				<div class="menu-products tabcontent col-8" id="sixteenthTab">
-					<p>Амортизаторы и вилки33333333</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Колёса и комплектующие</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Амортизаторы</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Вилки</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для вилок</a>
-						</li>
-						<li class="product-item">
-							<a href="#">Запчасти для амортизаторов</a>
-						</li>
-
-					</ul>
-
-					<p>Трансмиссия</p>
-					<ul class="products-list">
-
-						<li class="product-item">
-							<a href="#">Манетки</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключатели задние</a>
-						</li>
-
-						<li class="product-item">
-							<a href="#">Переключтели передние</a>
-						</li>
-
-					</ul>
-				</div>
-
 
 			</nav>
 		</div>
@@ -1348,15 +1053,28 @@
 
 	<main class="main">
 
+		<div class="container breadcrumb-wrap" >
+			<div class="row">
+				<div class="col-12">	
+					<nav aria-label="breadcrumb">
+					  <ol class="breadcrumb">
+					    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">Помощь</li>
+					  </ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+
 		<section class="silver-tickets">
 			<div class="container">
 				<h1>Помощь</h1>
 				<div class="row">
-					<div class="col-12 col-lg-4 col-xl-3">
+					<div class="col-12 col-md-6 col-lg-6 col-xl-3 happy-to-help-col">
 						<div class="silver-bg happy-to-help-wrap">
 							<div class="silver-block-img">
 								<picture>
-									<img src="img/help-img.png" srcset="img/new-pic-x2.png 2x">
+									<img src="img/help-img.png" srcset="img/help-img-big.png 2x">
 								</picture>
 							</div>
 							<div class="happy-to-help">
@@ -1368,7 +1086,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-4 col-xl-3 px-lg-0">
+					<div class="col-12 col-md-6 col-lg-6 col-xl-3 pl-lg-0 px-xl-0 payment-col">
 						<div class="silver-bg payment-wrap">
 							<div class="payment">
 								<h2>Оплата</h2>
@@ -1391,11 +1109,14 @@
 								</ul>
 							</div>
 							<div class="silver-block-img">
-								<img src="img/money.png" alt="">
+								<picture>
+									<img src="img/money.png" srcset="img/money-img-big.png 2x">
+								</picture>
 							</div>
+
 						</div>
 					</div>
-					<div class="col-12 col-lg-4 col-xl-6">
+					<div class="col-12 col-lg-12 col-xl-6">
 						<div class="d-flex flex-column">
 
 							<div class="silver-bg bonus-wrap">
@@ -1408,7 +1129,9 @@
 									</ul>
 								</div>
 								<div class="silver-block-img">
-									<img src="img/bonus-money-img.png" alt="">
+									<picture>
+										<img src="img/bonus-money-img.png" srcset="img/bonus-money-img-big.png 2x">
+									</picture>
 								</div>
 							</div>
 
@@ -1425,14 +1148,13 @@
 											<a href="#" class="silver-block-btn">Гарантийные талоны</a>
 										</div>
 									</div>
-
 								</div>
 							</div>
 
 						</div>
 					</div>
 
-					<div class="col-12 col-lg-6 pr-lg-0">
+					<div class="col-12 col-lg-6 pr-lg-0 return-col">
 						<div class="silver-bg return-wrap">
 							<div class="return">
 								<h2>Легкий возврат</h2>
@@ -1443,7 +1165,9 @@
 								</div>
 							</div>
 							<div class="silver-block-img">
-								<img src="img/return-img.png" alt="">
+								<picture>
+									<img src="img/return-img.png" srcset="img/bonus-money-img-big.png 2x">
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -1457,7 +1181,9 @@
 								</div>
 							</div>
 							<div class="silver-block-img">
-								<img src="img/delivery-img.png" alt="">
+								<picture>
+									<img src="img/delivery-img.png" srcset="img/delivery-img-big.png 2x">
+								</picture>
 							</div>
 						</div>
 					</div>
@@ -1489,27 +1215,39 @@
 			<div class="container easy-return">
 				<h2>Легкий возврат</h2>
 				<div class="row">
-					<div class="col-12">
-						<p>
-							Покупайте, пробуйте, вам понравится, если нет, мы вернем вам деньги! Без вопросов, заявлений
-							и дополнительных комиссий. <br>
-							Вы вправе передумать. Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на
-							понравившийся вам товар или вернём деньги.
-						</p>
-						<ul>
-							<li>Свяжитесь с нами по телефону или онлайн-чаты. Мы оформим вам бланк возврата и вышлем его
-								вам на электронную почту; </li>
-							<li>распечатайте и заполните бланк, его нужно будет сдать вместе с заказом на указанном нами
-								пункте выдачи ;</li>
-							<li>надёжно упакуйте товар в коробку, предотвращая трение изделий между собой и свободное
-								перемещение товара внутри упаковки;</li>
-							<li>сдайте заказ в том же месте, где получали его или другом удобном вам партнёрском пункте
-								выдачи заказов или магазине;</li>
-						</ul>
-						<p>Возврат и обмен товара производится на основании Закона РФ "О защите прав потребителей" и
-							регулируется ст. 18, 19, 20, 21.</p>
-						<p>В случае доставки на дом и возникновения гарантийного случая/наличия брака у товара, мы
-							самостоятельно и за свой счёт заберём от вас данный товар.</p>
+					<div class="col-12 easy-return-col">
+						<!-- <picture class="easy-return-img">
+							<img src="img/return-img.png">
+						</picture> -->
+						<div>
+							<picture class="easy-return-img">
+								<img src="img/return-img.png">
+							</picture>
+							<p class="easy-return-txt-desktop">
+								Покупайте, пробуйте, вам понравится, если нет, мы вернем вам деньги! Без вопросов, заявлений
+								и дополнительных комиссий. <br>
+								Вы вправе передумать. Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на
+								понравившийся вам товар или вернём деньги.
+							</p>
+							<p class="easy-return-txt-mob">
+								Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на
+								понравившийся вам товар или вернём деньги.
+							</p>
+							<ul>
+								<li>Свяжитесь с нами по телефону или онлайн-чаты. Мы оформим вам бланк возврата и вышлем его
+									вам на электронную почту; </li>
+								<li>распечатайте и заполните бланк, его нужно будет сдать вместе с заказом на указанном нами
+									пункте выдачи ;</li>
+								<li>надёжно упакуйте товар в коробку, предотвращая трение изделий между собой и свободное
+									перемещение товара внутри упаковки;</li>
+								<li>сдайте заказ в том же месте, где получали его или другом удобном вам партнёрском пункте
+									выдачи заказов или магазине;</li>
+							</ul>
+							<p class="easy-return-txt-desktop">Возврат и обмен товара производится на основании Закона РФ "О защите прав потребителей" и
+								регулируется ст. 18, 19, 20, 21.</p>
+							<p class="easy-return-txt-desktop">В случае доставки на дом и возникновения гарантийного случая/наличия брака у товара, мы
+								самостоятельно и за свой счёт заберём от вас данный товар.</p>
+						</div>
 					</div>
 				</div>
 
@@ -1538,23 +1276,84 @@
 
 	</main>
 
-	<footer class="footer">
+	<div class="pre-footer">
+
 		<div class="container">
 			<div class="row">
+				
+				<div class="col-12 qr-with-stores">
+					<h4 class="ftr-subtitle ftr-gr-code-subtitle">Скачайте наше приложение</h4>
+					<div class="d-flex">
+						<div class="stores-wrap">
+							<div class="app-store">
+								<img src="img/app-store.png">
+							</div>
+							<div class="google-play">
+								<img src="img/google-play.png">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="row ftr-main-row">
 				<div class="col-12 col-xl-6">
 					<div class="row">
-						<div class="col-6">
+						<div class="col-12 col-sm-6">
 							<h3 class="ftr-subtitle">Помощь</h3>
-							<ul class="ftr-list">
+							<ul class="ftr-list help-list-desktop">
 								<li><a href="#">Как оплатить?</a></li>
 								<li><a href="#">Как получить?</a></li>
 								<li><a href="#">Пользовательское соглашение</a></li>
 								<li><a href="#">Бонусная программа</a></li>
 							</ul>
+							<ul class="ftr-list help-list-mob">
+								<li class="help-list-mob-item">
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.3883 6H8.17855C8.0165 6 7.88391 6.13696 7.88391 6.30435V8.73913H7.29464C7.13259 8.73913 7 8.87609 7 9.04348C7 9.21087 7.13259 9.34783 7.29464 9.34783H7.88391V10.0752H7.29464C7.13259 10.0752 7 10.2122 7 10.3796C7 10.547 7.13259 10.6839 7.29464 10.6839H7.88391V12.6957C7.88391 12.863 8.0165 13 8.17855 13C8.3406 13 8.47319 12.863 8.47319 12.6957V10.6839H10.2675C10.4296 10.6839 10.5622 10.547 10.5622 10.3796C10.5622 10.2122 10.4296 10.0752 10.2675 10.0752H8.47319V9.34783H10.3883C11.4461 9.34783 12 8.50478 12 7.67391C12 6.84304 11.4461 6 10.3883 6ZM10.3883 8.73913H8.47319V6.6087H10.3883C10.7065 6.6087 10.9717 6.7213 11.1544 6.93435C11.3164 7.12304 11.4107 7.39391 11.4107 7.67391C11.4107 8.20348 11.0925 8.73913 10.3883 8.73913Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="0.2"/>
+										<path d="M9 1C4.58776 1 1 4.58776 1 9C1 13.4122 4.58776 17 9 17C13.4122 17 17 13.4122 17 9C17 4.58776 13.4122 1 9 1ZM9 16.1837C5.04082 16.1837 1.81633 12.9592 1.81633 9C1.81633 5.04082 5.04082 1.81633 9 1.81633C12.9592 1.81633 16.1837 5.04082 16.1837 9C16.1837 12.9592 12.9592 16.1837 9 16.1837Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="0.2"/>
+										</svg>
+										Оплата
+									</a>
+								</li>
+								<li class="help-list-mob-item">
+									<a href="#">
+										<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.86138 8.82902H12.8032C14.5563 8.82902 15.9792 7.45377 15.9792 5.76532C15.9792 4.07686 14.5529 2.70161 12.8032 2.70161H5.05541C4.86138 1.55783 3.75165 0.798696 2.60786 1.04721C1.58321 1.26846 0.888772 2.24885 1.01473 3.28713C1.15771 4.45134 2.24022 5.2479 3.384 5.05728C4.24184 4.91089 4.91244 4.24029 5.05883 3.38245H12.8066C14.1818 3.38245 15.3018 4.45134 15.3018 5.76535C15.3018 7.07933 14.1819 8.14824 12.8066 8.14824H4.86138C3.10827 8.14824 1.68192 9.5235 1.68192 11.2119C1.68192 12.9004 3.10824 14.2757 4.85796 14.2757H10.3896L8.93269 15.736C8.79652 15.8654 8.79314 16.0832 8.9259 16.216C9.05866 16.3488 9.27312 16.3556 9.40588 16.2228C9.40929 16.2194 9.41267 16.216 9.41267 16.216L11.4517 14.1769C11.5845 14.0442 11.5845 13.8297 11.4517 13.697L9.41267 11.6545C9.2765 11.5251 9.06204 11.5285 8.93269 11.6613C8.80673 11.7941 8.80673 12.0017 8.93269 12.1345L10.3931 13.5948H4.86138C3.48271 13.5948 2.36277 12.526 2.36277 11.2119C2.36277 9.89794 3.48271 8.82902 4.86138 8.82902ZM3.04358 4.40028C2.29128 4.40028 1.68192 3.79095 1.68192 3.03862C1.68192 2.28632 2.29125 1.67696 3.04358 1.67696C3.79588 1.67696 4.40524 2.28629 4.40524 3.03862C4.40524 3.79092 3.79588 4.40028 3.04358 4.40028Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="0.4"/>
+										<path d="M14.9576 11.8894C13.8309 11.8894 12.9152 12.8051 12.9152 13.9319C12.9152 15.0586 13.8309 15.9743 14.9576 15.9743C16.0844 15.9743 17.0001 15.0586 17.0001 13.9319C17.0001 12.8051 16.0878 11.8928 14.9576 11.8894ZM14.9576 15.2935C14.2053 15.2935 13.596 14.6842 13.596 13.9319C13.596 13.1795 14.2053 12.5702 14.9576 12.5702C15.71 12.5702 16.3193 13.1795 16.3193 13.9319C16.3193 14.6842 15.71 15.2935 14.9576 15.2935Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="0.4"/>
+										</svg>
+										Условия доставки
+									</a>
+								</li>
+								<li class="help-list-mob-item">
+									<a href="#">
+										<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.9304 10.1311C15.3957 10.1311 14.9844 10.5424 14.9844 11.036V15.2724H5.64776V11.036C5.64776 10.5424 5.23646 10.1722 4.74289 10.1722C4.24932 10.1722 3.83801 10.5424 3.83801 11.036V16.1362C3.83801 16.6298 4.24932 16.9999 4.74289 16.9999H15.8893C16.3829 16.9999 16.7942 16.6298 16.7942 16.1362V11.036C16.8353 10.5424 16.424 10.1311 15.9304 10.1311Z" fill="#F2F2F2" stroke="black" stroke-width="0.4"/>
+										<path d="M19.3443 8.77371L10.9948 1.24678C10.6246 0.917739 10.0488 0.917739 9.71972 1.24678L1.28792 8.77371C1.12339 8.93823 1 9.18502 1 9.4318C1 9.67859 1.12339 9.92537 1.28792 10.0899C1.45244 10.2544 1.69922 10.3367 1.94601 10.3367C2.19279 10.3367 2.39845 10.2544 2.6041 10.0899L10.3367 3.09767L18.0693 10.0488C18.2338 10.2133 18.4806 10.2955 18.7273 10.2955C18.9741 10.2955 19.1798 10.2133 19.3854 10.0488C19.55 9.88424 19.6734 9.63745 19.6734 9.39067C19.6734 9.18502 19.55 8.93823 19.3443 8.77371Z" fill="#F2F2F2" stroke="black" stroke-width="0.4"/>
+										</svg>
+										Контакты
+									</a>
+								</li>
+								<li class="help-list-mob-item">
+									<a href="#">
+										<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.5995 15.6651C13.4872 15.6655 13.3777 15.6312 13.2865 15.5669L8.99917 12.5148L4.71186 15.5669C4.62027 15.6321 4.50992 15.6671 4.39677 15.6667C4.28362 15.6663 4.17353 15.6305 4.08242 15.5646C3.99131 15.4988 3.9239 15.4061 3.88993 15.3001C3.85597 15.1942 3.85721 15.0803 3.89347 14.9751L5.56559 10.1119L1.23195 7.19367C1.13808 7.13053 1.06723 7.03957 1.02976 6.93408C0.992284 6.82859 0.990148 6.71409 1.02366 6.60732C1.05718 6.50056 1.12458 6.40711 1.21603 6.34063C1.30749 6.27416 1.41819 6.23815 1.53197 6.23785H6.87835L8.4918 1.3622C8.52656 1.25694 8.59437 1.16519 8.68552 1.10012C8.77668 1.03505 8.88647 1 8.99917 1C9.11186 1 9.22166 1.03505 9.31281 1.10012C9.40396 1.16519 9.47178 1.25694 9.50654 1.3622L11.12 6.23949H16.4664C16.5803 6.23944 16.6912 6.2752 16.783 6.34154C16.8747 6.40789 16.9424 6.50133 16.9761 6.60818C17.0098 6.71503 17.0078 6.82968 16.9704 6.93533C16.9329 7.04098 16.862 7.13209 16.7681 7.19531L12.4327 10.1119L14.1039 14.9738C14.1309 15.0525 14.1386 15.1364 14.1261 15.2186C14.1136 15.3007 14.0814 15.3788 14.0321 15.4464C13.9829 15.5139 13.9179 15.569 13.8427 15.607C13.7675 15.645 13.6841 15.6649 13.5995 15.6651Z" stroke="#F2F2F2"/>
+										</svg>
+										Оставить отзыв
+									</a>
+								</li>
+							</ul>
 						</div>
-						<div class="col-6">
-							<h3 class="ftr-subtitle">О нас</h3>
-							<ul class="ftr-list">
+						<div class="col-12 col-sm-6">
+							<h3 class="ftr-subtitle ftr-about-us-title">О нас</h3>
+							<ul class="ftr-list ftr-list-about-desktop">
 								<li><a href="#">Ремонт и облуживание</a></li>
 								<li><a href="#">Прокат оборудования</a></li>
 								<li><a href="#">Наша история</a></li>
@@ -1563,15 +1362,50 @@
 								<li><a href="#">Вакансии</a></li>
 								<li><a href="#">Контакты</a></li>
 							</ul>
+
+							<ul class="ftr-list ftr-list-about-mob">
+								<li class="ftr-list-about-mob-item">
+									<a href="#">Ремонт и облуживание</a>
+								</li>
+
+								<li class="ftr-list-about-mob-item">
+									<a href="#">Прокат оборудования</a>
+								</li>
+
+								<li class="ftr-list-about-mob-item">
+									<a href="#">О нас</a>
+								</li>
+
+								<li class="ftr-list-about-mob-item">
+									<a href="#">Вакансии</a>
+								</li>
+
+								<li class="ftr-list-about-mob-item">
+									<a href="#">Пользовательское соглашение</a>
+								</li>
+
+								<li class="ftr-list-about-mob-item">
+									<a href="#">Бонусная программа</a>
+								</li>
+
+								<li class="ftr-list-about-mob-item">
+									<a href="#">Арендодателям</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-12 col-lg-11">
-							<h4>Узнавай о скидках первым</h4>
+					<div class="row mb-4 mb-xl-0">
+						<div class="col-12 col-sm-8 col-md-6 col-lg-11">
+							<h4 class="subscribe-form-title">Узнавай о скидках первым</h4>
+							<p class="subscribe-form-mob-txt">Подпишитесь на наши новости</p>
 							<form class="form-inline subscribe-form">
 								<input class="form-control" type="search" placeholder="Ведите свой e-mail"
 									aria-label="Search">
 								<button class="subscribe-btn" type="submit">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 9L17 9" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M9 1L17 9L9 17" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
 									Подписаться
 								</button>
 							</form>
@@ -1579,14 +1413,14 @@
 					</div>
 				</div>
 				<div class="col-12 col-xl-6">
-					<div class="row">
-						<div class="col-6">
+					<div class="row concts-with-qr">
+						<div class="col-12 col-sm-6">
 							<h3 class="ftr-subtitle">Контакты</h3>
 							<ul class="ftr-list ftr-phones">
 								<li><a href="#">8 (800) 500-03-20</a></li>
 								<li><a href="#">8 (861) 202-58-40</a></li>
 							</ul>
-							<ul class="ftr-list ftr-messengers">
+							<ul class="ftr-list ftr-messengers ftr-messengers-desktop">
 								<li>
 									<a href="#" class="ftr-messenger">
 										<div><img src="img/whatsapp.png"></div>
@@ -1600,19 +1434,34 @@
 									</a>
 								</li>
 							</ul>
-							<h3 class="ftr-subtitle">Адреса в г. Крансодаре:</h3>
-							<ul class="ftr-list">
+
+							<ul class="ftr-list ftr-messengers ftr-messengers-mob">
+								<li class="ftr-messengers-mob-item">
+									<a href="#" class="ftr-messenger">
+										<div><img src="img/whatsapp.png"></div>
+										Написать в WhatsApp
+									</a>
+								</li>
+								<li class="ftr-messengers-mob-item">
+									<a href="#" class="ftr-messenger">
+										<div><img src="img/telegram.png"></div>
+										Написать в Telegram
+									</a>
+								</li>
+							</ul>
+							<h3 class="ftr-subtitle ftr-address-subtitle">Адреса в г. Крансодаре:</h3>
+							<ul class="ftr-list ftr-address-list">
 								<li>ул. Дорожная, 1Е (Яблоновский)</li>
 								<li>ул. Сормовская, 2а</li>
 								<li>ул. Красных Партизан, 237</li>
 								<li>ул. Российская, 131/5</li>
 							</ul>
 						</div>
-						<div class="col-6 qr-with-icons">
+						<div class="col-12 col-sm-6 qr-with-icons">
 							<div class="row">
 
 								<div class="col-12 qr-with-stores">
-									<h4 class="ftr-subtitle">Скачайте наше приложение</h4>
+									<h4 class="ftr-subtitle ftr-gr-code-subtitle">Скачайте наше приложение</h4>
 									<div class="d-flex">
 										<div class="gr-code-wrap">
 											<img src="img/qr_bike-center.png">
@@ -1650,36 +1499,9 @@
 
 	</footer>
 
-	<script>
-		const burger = document.querySelector('.burger');
-		const popUp = document.querySelector('.catalog-wrap');
+	<script src="js/burger.js"></script>
 
-		burger.addEventListener('click', () => {
-			if (popUp.style.display == 'none') {
-				popUp.style.display = 'block';
-			} else {
-				popUp.style.display = 'none';
-			}
-		})
-	</script>
-
-	<script>
-		function openTab(evt, cityName) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("catalog-item");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(cityName).style.display = "flex";
-			evt.currentTarget.className += " active";
-		}
-
-		document.getElementById("defaultOpen").click();
-	</script>
+	<script src="js/tabs.js"></script>
 
 </body>
 
