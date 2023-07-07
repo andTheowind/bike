@@ -1189,6 +1189,10 @@ h4.ftr-subtitle {
     padding-bottom: 0;
   }
 
+  .silver-bg.happy-to-help-wrap .ticket-btn-wrap {
+    padding-top: 10px;
+  }
+
   .silver-bg h2 {
     font-size: 21px;
   }
