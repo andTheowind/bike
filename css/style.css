@@ -1180,6 +1180,10 @@ h4.ftr-subtitle {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+  .silver-bg.happy-to-help-wrap {
+    padding: 50px 26px 26px 26px;
+  }
+
   .silver-bg h2 {
     font-size: 21px;
   }
