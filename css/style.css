@@ -507,8 +507,8 @@ img {
   justify-content: flex-end;
 }
 
-section p,
-section ul li a {
+.main p,
+.main ul li a {
   color: #333333;
 }
 
@@ -1549,7 +1549,7 @@ h4.ftr-subtitle {
 
 @media only screen and (max-width: 540px) {
 
-  section p {
+  .main p {
     line-height: 1.5;
   }
 
