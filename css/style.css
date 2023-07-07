@@ -41,7 +41,6 @@ img {
   cursor: pointer;
 }
 
-
 .container {
   max-width: 1674px;
 }
@@ -79,8 +78,8 @@ img {
 .burger-mob-wrap {
   display: none;
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border: none;
   background: transparent;
 }
@@ -178,7 +177,6 @@ img {
 .catalog-btn  {
   font-size: 14px;
   font-weight: 700;
-/*  padding: 10px 22px;*/
   color: #ffffff;
   white-space: nowrap;
 }
@@ -388,7 +386,6 @@ img {
 
 .search-form .form-control,
 .subscribe-form .form-control {
-  /* height: 38px; */
   z-index: 4;
   border-radius: 9px;
   width: 100%;
@@ -397,8 +394,8 @@ img {
 
 .search-form .form-control {
   border: 3px solid #E0E0E0;
-  padding: 10px 100px 10px 30px;
-  width: 82%;
+  padding: 10px 100px 10px 26px;
+  width: 85%;
 }
 
 
@@ -420,7 +417,7 @@ img {
 
 .btn-search {
   background-color: #E0E0E0;
-  padding: 13px 30px 13px 34px;
+  padding: 13px 42px 13px 34px;
 }
 
 .btn-search,
@@ -510,6 +507,11 @@ img {
   justify-content: flex-end;
 }
 
+section p,
+section ul li a {
+  color: #333333;
+}
+
 .breadcrumb {
   display: flex;  
   flex-wrap: wrap;
@@ -539,6 +541,38 @@ img {
 .silver-tickets h1 {
   margin-top: 26px;
   margin-bottom: 45px;
+}
+
+.silver-tickets .contacts-mob-txt {
+  display: none;
+}
+
+.silver-tickets .contacts-mob-txt h2 {
+  margin-top: 22px;
+  margin-bottom: 38px;
+}
+
+.silver-tickets .contacts-mob-txt p {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.silver-tickets .contacts-mob-txt p.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.24px;
+}
+
+.silver-tickets .contacts-mob-txt br {
+  display: block;
+  margin-top: 14px;
+  content: "\0020";
+}
+
+.silver-tickets .contacts-mob-txt .silver-block-btn {
+  margin-top: 14px;
 }
 
 .silver-tickets .container>.row>div {
@@ -615,7 +649,11 @@ img {
 .payment {}
 
 .payment ul li {
-  margin-block: 20px;
+  margin-bottom: 20px;
+}
+
+.payment ul li:last-child {
+  margin-bottom: 10px;
 }
 
 .payment ul li a {
@@ -708,26 +746,38 @@ img {
   font-size: 16px;
 }
 
+.text-help-page ul li a {
+  text-decoration: underline;
+  text-decoration-color: #333;
+}
+
 .text-help-page h4 {
   margin-top: 25px;
 }
-
 
 .easy-return {
   padding-top: 8px;
 }
 
+.guarantee-mob,
 .easy-return-img,
 .easy-return-txt-mob {
   display: none;
 }
 
+.guarantee-mob button {
+  margin-top: 25px;
+}
+
 .feedback {
   padding-top: 20px;
 }
-
-
-
+.feedback ul li a,
+.feedback p a {
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #333;
+}
 
 .pre-footer {
   display: none;
@@ -813,14 +863,6 @@ h4.ftr-subtitle {
 
 .gr-code-wrap {
   margin-right: 40px;
-}
-
-.qr-with-stores .d-flex {
-  /*    justify-content: flex-end;*/
-}
-
-.qr-with-icons h4 {
-  /*    padding-left: 30px;*/
 }
 
 .stores-wrap {
@@ -922,7 +964,6 @@ h4.ftr-subtitle {
 
 
 
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
   .catalog-btn {
@@ -942,16 +983,14 @@ h4.ftr-subtitle {
   }
 
   .personal-area {
-    margin-right: 16px;
+    margin-right: 12px;
+    padding-right: 30px;
+    font-size: 9px;
   }
 
   .search-form .form-control,
   .subscribe-form .form-control {
     padding-left: 17px;
-  }
-
-  .personal-area {
-    padding-right: 20px;
   }
 
 }
@@ -1239,10 +1278,19 @@ h4.ftr-subtitle {
 
   .btn-search svg path {
     stroke: #FFFFFF;
+    stroke-width: 1;
+  }
+  
+  .silver-tickets h1 {
+    margin: 26px 0 21px 0;
   }
 
   .silver-tickets .container .row {
     flex-direction: column-reverse;
+  }
+
+  .silver-tickets .contacts-mob-txt {
+    display: block;
   }
 
   .silver-tickets .container>.row>div {
@@ -1259,11 +1307,15 @@ h4.ftr-subtitle {
     background: linear-gradient(178deg, #E2E6EB 0%, #F3F1F5 69.93%);
   }
 
+  .easy-return-col .easy-return-txt-mob {
+    font-weight: 600;
+  }
+
   .easy-return-img {
     position: relative;
     top: -30px; 
   }
-  
+  .guarantee-mob,
   .easy-return-img,
   .easy-return-txt-mob {
     display: block;
@@ -1311,7 +1363,7 @@ h4.ftr-subtitle {
     right: 2px;
     width: 10px;
     height: 16px;
-    background-image: url(../img/arrow-catalog.svg);
+    background-image: url('../img/arrow-catalog.svg');
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(-50%); 
@@ -1333,21 +1385,23 @@ h4.ftr-subtitle {
     content: "";
     position: absolute;
     left: -12px;
-    top: 50%;
+    top: 11px;
     transform: translateY(-50%);
-    width: 4px; /* задаем ширину маркера */
-    height: 4px; /* задаем высоту маркера */
-    border-radius: 50%; /* делаем маркер круглым */
-    background-color: black; /* задаем цвет маркера */
+    width: 4px; 
+    height: 4px; 
+    border-radius: 50%; 
+    background-color: black; 
   }
 
   .header .top-menu,
+  .container.breadcrumb-wrap,
   .category-row,
   .personal-area,
   .search-form .form-control,
   .happy-to-help-col,
   .happy-to-help-wrap,
   .return-wrap,
+  .delivery-wrap h2,
   .guarantees-wrap,
   .return-col,
   .silver-bg.bonus-wrap .silver-block-img,
@@ -1363,6 +1417,21 @@ h4.ftr-subtitle {
   .ftr-messengers.ftr-messengers-desktop,
   .easy-return-txt-desktop {
     display: none;
+  }
+
+  .payment ul li {
+    margin-bottom: 6px;
+    padding-bottom: 12px;
+  }
+
+  .payment ul li:last-child {
+    margin-bottom: 5px;
+  }
+  .container.feedback .row:last-child {
+    display: none;
+  }
+  .feedback {
+    padding-top: 10px;
   }
 
   .ftr-main-row,
@@ -1417,11 +1486,13 @@ h4.ftr-subtitle {
       border-bottom: 2px solid #4f4f4f;
       border-top: 2px solid #4f4f4f;
       padding-top: 11px;
+      padding-left: 17px;
     }
 
     .subscribe-btn {
       background-color: #828282;
       text-indent: -9999px;
+      padding: 12px 20px 14px 20px;
       overflow: hidden;
       white-space: nowrap;
     }
@@ -1433,6 +1504,28 @@ h4.ftr-subtitle {
 }
 
 @media only screen and (max-width: 575px) {
+
+  .navbar .offset-2 {
+    padding-right: 8px;
+  }
+
+  .navbar-btn-link {
+    gap: 0;
+  }
+
+  .silver-bg.bonus-wrap {
+    margin-bottom: 5px;
+  }
+
+  .silver-tickets .container > .row > div {
+    margin-bottom: 8px;
+  }
+
+  .text-help-page h2, 
+  .text-help-page ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
 
   .pre-footer {
     display: block;
@@ -1455,18 +1548,52 @@ h4.ftr-subtitle {
 }
 
 @media only screen and (max-width: 540px) {
+
+  section p {
+    line-height: 1.5;
+  }
+
+  .navbar {
+    padding: 2px 0;
+  }
+  .catalog-btn {
+    padding: 2px 20px 5px 0;
+  }
+
+  .btn-search {
+    padding-right: 0;
+  }
+
+  .silver-tickets .contacts-mob-txt p.h3 {
+    max-width: 225px;
+  }
+
   .silver-block-btn {
     width: 100%;
     display: inline-flex;
     justify-content: center;
     text-align: center;
   }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .personal-area img {
+    padding: 4px 6px;
+  }
+
+  .navbar-btns .navbar-btn:not(:last-child) {
+    margin-right: 14px;
+  }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1060px) {
+
   .catalog-btn {
     margin-left: 10px;
   }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1478,7 +1605,7 @@ h4.ftr-subtitle {
   }
 
   .silver-bg.guarantees-wrap {
-/*      margin-left:   15px;*/
+    /* margin-left:   15px;*/
   }
 
 
@@ -1520,12 +1647,25 @@ h4.ftr-subtitle {
 
 @media only screen and (min-width: 1920px) {
 
+  .catalog-btn {
+    margin-right: 0;
+  }
+
+  .silver-bg {
+    padding: 33px 36px;
+  }
+
+  .silver-bg h2 {
+    font-size: 22px;
+  }
+
   .happy-to-help-wrap .silver-block-img img {
-    max-width: 250px;
+    max-width: 260px;
   }
 
   .payment-wrap .silver-block-img img {
-    max-width: 227px;
+    max-width: 233px;
   }
 
 }
+
