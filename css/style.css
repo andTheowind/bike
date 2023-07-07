@@ -9,6 +9,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -46,13 +47,13 @@ img {
 }
 
 .header {
-  position: relative;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
   padding-bottom:   5px;
 }
 
 .header>.container {
   padding: 0;
+  position: relative;
 }
 
 .header .top-menu {
@@ -268,7 +269,7 @@ img {
 
 .catalog-link:hover  {
   background-color: #F2F3F5;
-
+  color: #EA5455;
 }
 
 .catalog-link .catalog-img-wrap {
@@ -308,6 +309,10 @@ img {
 .header .products-list a {
   color: #333333;
   font-size: 14px;
+}
+
+.header .products-list a:hover {
+  color: #EA5455;
 }
 
 .menu-products .product-item {
