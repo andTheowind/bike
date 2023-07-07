@@ -513,6 +513,7 @@ img {
 }
 
 .main p,
+.main ul li,
 .main ul li a {
   color: #333333;
 }
