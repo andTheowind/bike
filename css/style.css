@@ -1184,6 +1184,11 @@ h4.ftr-subtitle {
     padding: 50px 26px 26px 26px;
   }
 
+  .silver-bg.happy-to-help-wrap .happy-to-help {
+    margin-top: 40px;
+    padding-bottom: 0;
+  }
+
   .silver-bg h2 {
     font-size: 21px;
   }
