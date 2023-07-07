@@ -1216,6 +1216,34 @@ h4.ftr-subtitle {
 
 }
 
+@media only screen and (min-width: 1023px) and (max-width: 1366px) {
+
+  .silver-bg.happy-to-help-wrap {
+    padding: 50px 26px 26px 26px;
+  }
+
+  .happy-to-help-wrap .silver-block-img img {
+    max-width: 200px;
+  }
+
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1540px) {
+
+  .payment-wrap .silver-block-img img {
+    max-width: 172px;
+  }
+
+  .silver-bg.bonus-wrap .silver-block-img img {
+    max-width: 300;
+  }
+
+  .silver-bg .silver-block-img {
+    top: -40px;
+  }
+
+}
+
 @media only screen and (max-width: 820px) {
 
   .top-menu-list.top-contacts {
