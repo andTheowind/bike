@@ -702,6 +702,7 @@ img {
 .bonus-txt ul li {
   font-size: 14px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .guarantees-wrap .silver-block-img {}
@@ -939,6 +940,13 @@ h4.ftr-subtitle {
 }
 
 .soc-icons div {}
+
+.soc-icons a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .soc-icons i {
   font-size: 20px;
