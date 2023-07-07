@@ -103,7 +103,7 @@ img {
 }
 
 .header.open .burger-mob-wrap span.burger-mob {
-  background-color: #949494;
+  background-color: #F84445;
 }
 
 .header.open .burger-mob-wrap span.burger-mob:nth-child(1) {
@@ -801,7 +801,7 @@ img {
   background-color: #0C1111;
   padding-top: 74px;
   padding-bottom: 53px;
-  color: #ffffff;
+  color: #F2F2F2;
 }
 
 .footer .img-fluid {
@@ -827,7 +827,9 @@ h4.ftr-subtitle {
 .subscribe-form-mob-txt,
 .ftr-list.help-list-mob,
 .ftr-list.ftr-list-about-mob ,
-.ftr-messengers.ftr-messengers-mob{
+.ftr-messengers.ftr-messengers-mob,
+.ftr-mob-address,
+.ftr-mob-btn {
   display: none;
 }
 
@@ -870,6 +872,11 @@ h4.ftr-subtitle {
   flex-direction: column;
 }
 
+.app-store a,
+.google-play a {
+  width: 100%;
+}
+
 .app-store,
 .google-play {
   background-color: #333333;
@@ -880,6 +887,26 @@ h4.ftr-subtitle {
   justify-content: center;
   border-radius: 7px;
   margin-bottom: 16px;
+}
+
+.app-store img,
+.google-play img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ftr-mob-btn {
+  background-color: #EB5757;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-radius: 7px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .soc-icons-wrap {
@@ -956,6 +983,11 @@ h4.ftr-subtitle {
   background-repeat: no-repeat, no-repeat;
   background-position: calc(100% - 5px) center;
   width: 100%;
+}
+
+.ftr-messengers-mob-item:first-child {
+  border-bottom: 1px solid #333333;
+  padding-bottom: 15px;
 }
 
 .help-list-mob-item a svg {
@@ -1317,8 +1349,15 @@ h4.ftr-subtitle {
   }
   .guarantee-mob,
   .easy-return-img,
-  .easy-return-txt-mob {
+  .easy-return-txt-mob,
+  .ftr-messengers.ftr-messengers-mob,
+  .ftr-mob-address,
+  .ftr-mob-btn {
     display: block;
+  }
+
+  .ftr-mob-btn {
+    display: inline-flex;
   }
 
   .easy-return-img img {
@@ -1393,6 +1432,10 @@ h4.ftr-subtitle {
     background-color: black; 
   }
 
+  .footer {
+    padding-top: 18px;
+  }
+
   .header .top-menu,
   .container.breadcrumb-wrap,
   .category-row,
@@ -1409,14 +1452,24 @@ h4.ftr-subtitle {
   .ftr-about-us-title,
   .ftr-list.help-list-desktop,
   .ftr-list-about-desktop,
+  .ftr-messengers.ftr-messengers-desktop,
   .subscribe-form-title,
   .soc-icons-wrap,
   .gr-code-wrap,
+  .concts-with-qr .ftr-subtitle,
+  .ftr-list.ftr-phones,
+  .footer .ftr-subtitle.ftr-gr-code-subtitle,
   .ftr-address-subtitle,
   .ftr-address-list,
   .ftr-messengers.ftr-messengers-desktop,
   .easy-return-txt-desktop {
     display: none;
+  }
+
+  .ftr-mob-address p {
+    text-decoration: underline;
+    margin-bottom: 25px;
+    line-height: 1.5;
   }
 
   .payment ul li {
