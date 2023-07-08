@@ -340,6 +340,14 @@ img {
   margin-right: 19px;
 }
 
+.navbar-btns .navbar-btn-link:hover {
+  color: #EA5455;
+}
+
+.navbar-btns .navbar-btn-link:hover svg path {
+  stroke: #EA5455;
+}
+
 .personal-area {
   display: flex;
   align-items: center;
