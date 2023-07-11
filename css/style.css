@@ -158,6 +158,10 @@ img {
 
 .top-menu {}
 
+.top-menu .menu-link:hover {
+  color: #EA5455;
+}
+
 .top-menu-list li a,
 .top-menu .menu-link,
 .personal-area a,
@@ -1558,6 +1562,7 @@ h4.ftr-subtitle {
 
   .qr-with-stores .d-flex .stores-wrap {
     flex-direction: row;
+    width: 100%;
   }
 
   .app-store {
